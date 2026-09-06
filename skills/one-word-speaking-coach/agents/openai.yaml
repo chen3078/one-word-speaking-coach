@@ -1,0 +1,7 @@
+interface:
+  display_name: "一词成篇口语教练"
+  short_description: "从一个单词出发，完成问答、纠正、复述和迁移训练"
+  default_prompt: "Use $one-word-speaking-coach to start an A1 speaking lesson from a word I choose."
+
+policy:
+  allow_implicit_invocation: true
