@@ -12,6 +12,7 @@ Create a visual topic decomposition card after the main lesson when the environm
 - Prefer concrete nouns, adjectives, short verb phrases, and arrow sequences.
 - Use exact spelling and natural English.
 - Do not include full model paragraphs, grammar explanations, scores, brand names that were not needed, or decorative filler.
+- Every illustration and icon must directly depict the target topic, a practiced part or item, a practiced action, or a practiced place. Do not use unrelated visual metaphors, mascots, characters, animals, or decorative objects to represent an idea such as size or convenience.
 
 Typical branches:
 
@@ -46,9 +47,26 @@ Treat the benchmark as a style and composition reference only. Do not copy its c
 
 ## Generation strategy
 
-If a raster image-generation tool is available, classify this as a `scientific-educational` or `infographic-diagram` image. Include the approved benchmark as a style and layout reference when the tool supports reference images. Supply every required English label verbatim in the prompt. Inspect the result for subject accuracy, spelling, duplicated labels, missing branches, and legibility. Make one targeted correction pass when needed.
+Before generation, build a content manifest containing:
 
-If exact text cannot be produced reliably and the environment supports code-native SVG, HTML, canvas, slides, or diagram generation, prefer a text-safe layout that preserves the labels exactly. If no visual tool is available, output a compact English-only text mind map and state that it is the fallback, not an image.
+- the exact center word;
+- 6–9 exact branch headings;
+- every permitted English label, written verbatim;
+- the permitted objects, actions, and places for each branch.
+
+If a raster image-generation tool is available, classify this as a `scientific-educational` or `infographic-diagram` image. Include the approved benchmark as a style and layout reference when the tool supports reference images. Supply the complete content manifest in the prompt.
+
+Inspect the result against the manifest. Reject it and make one targeted correction pass when any of these conditions occurs:
+
+- required text is missing, misspelled, duplicated, or attached to the wrong object;
+- an unpracticed fact, unrelated object, mascot, character, animal, logo, brand, or Chinese text appears;
+- a required branch is missing or two branches are accidentally merged;
+- labels are too small, crowded, or low-contrast for phone review;
+- the central topic or a practiced part, action, or place is illustrated inaccurately.
+
+Do not accept a card merely because its overall style matches the benchmark. Content accuracy and direct visual relevance are required.
+
+If the targeted correction still cannot produce reliable exact text, use a code-native SVG, HTML, canvas, slides, or diagram layout that preserves every label exactly. If no visual tool is available, output a compact English-only text mind map and state that it is the fallback, not an image.
 
 ## Example content specification: coffee
 

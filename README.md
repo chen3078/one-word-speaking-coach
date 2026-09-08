@@ -31,17 +31,25 @@ one-word-speaking-coach/
 
 This plugin contains no MCP server, external connector, tracking code, or account authentication.
 
-The latest packaged release in this repository is `one-word-speaking-coach-plugin-1.0.2.zip`.
+The latest packaged release in this repository is `one-word-speaking-coach-plugin-1.0.3.zip`.
 
-## Start a lesson
+## Platform scope
 
-After installing the plugin, start a new ChatGPT conversation, select the skill with `@one-word-speaking-coach`, and say:
+This repository is a local Codex plugin package for desktop and CLI testing. Making the GitHub repository public does not automatically publish the plugin to the ChatGPT plugin directory or make it available across a ChatGPT account.
+
+ChatGPT mobile can use plugins that are available to the user's account on supported Chat and Work surfaces. Account-wide distribution requires the applicable ChatGPT plugin publishing or submission process. Codex voice runs in the ChatGPT desktop app; paired iOS remote access is separate from standalone mobile use.
+
+## Start a lesson locally
+
+After installing the plugin in Codex, start a new conversation, select the skill with `@one-word-speaking-coach`, and say:
 
 ```text
 My topic is coffee. Start at A1 and ask me one question at a time.
 ```
 
-Start voice chat in the same conversation to practice speaking aloud.
+In the ChatGPT desktop app, start Codex voice in the same conversation to practice speaking aloud.
+
+Official platform references: [ChatGPT plugins](https://learn.chatgpt.com/zh-Hans/docs/plugins) and [Codex voice](https://learn.chatgpt.com/pt-BR/docs/features/voice).
 
 ## Reference implementation
 

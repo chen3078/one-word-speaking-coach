@@ -118,18 +118,9 @@ The main lesson is complete after the corrected retelling. Transfer is optional 
 
 ### 8. Close with a reusable review package
 
-First, give the compact knowledge review:
-
-- the topic;
-- 3–5 practiced sentence patterns;
-- one thing the learner did well;
-- one priority for improvement;
-- a keyword route for later review;
-- one suggested next topic only when the learner accepted transfer or asks for a recommendation.
+Read [session-review.md](references/session-review.md) and follow its complete fixed output order. Reconstruct the package from the session ledger so the learner can review the entire lesson without reopening the chat history. Include every main learning question in chronological order and pair it only with the final correct, natural answer. Include important coach-led expansion sentences as practice items. Do not expose incorrect attempts, translation requests, hint history, or retry history, and do not replace the recap with only a model paragraph or a list of corrected sentences. Keep the strength and improvement feedback specific to observable performance in the completed session.
 
 Do not end with a long motivational speech.
-
-Then provide a complete, cleaned Q&A recap so the learner can review the entire lesson without reopening the chat history. Read [session-review.md](references/session-review.md) and reconstruct the recap from the session ledger. Include every main learning question in chronological order and pair it only with the final correct, natural answer. Include important coach-led expansion sentences as practice items. Do not expose incorrect attempts, translation requests, hint history, or retry history, and do not replace the recap with only a model paragraph or a list of corrected sentences.
 
 Finally, when the environment can create or display visual artifacts, create a mobile-friendly, English-only topic decomposition card from the material actually practiced. Do not generate it early because it would reveal answers. Read [visual-review-card.md](references/visual-review-card.md). If visual generation is unavailable, provide the same English labels as a compact text mind map without pretending an image was created.
 
