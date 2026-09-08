@@ -12,7 +12,8 @@ Create a visual topic decomposition card after the main lesson when the environm
 - Prefer concrete nouns, adjectives, short verb phrases, and arrow sequences.
 - Use exact spelling and natural English.
 - Do not include full model paragraphs, grammar explanations, scores, brand names that were not needed, or decorative filler.
-- Every illustration and icon must directly depict the target topic, a practiced part or item, a practiced action, or a practiced place. Do not use unrelated visual metaphors, mascots, characters, animals, or decorative objects to represent an idea such as size or convenience.
+- Every illustration must make the practiced meaning easier to retrieve. It may show the target object alone, the object being used in a natural action or context, or a small visual treatment attached directly to the object when that treatment clearly expresses a practiced quality.
+- Do not ban people, animals, faces, or decorative marks categorically. Allow them only when they have a clear semantic relationship to the target sentence. Reject isolated decoration or abstract reaction symbols that could appear beside almost any topic.
 
 Typical branches:
 
@@ -39,6 +40,17 @@ Rename or omit branches to fit the topic naturally.
 - Use a limited friendly color palette and simple illustrations.
 - Avoid tiny text, crowded backgrounds, watermarks, logos, unnecessary decoration, and Chinese characters.
 
+## Semantic illustration choices
+
+Choose the most direct visual explanation for each kind of sentence:
+
+- **Identity or function:** show the object performing its real function in a simple context. For `A backpack is a bag that we carry on our back`, a generic person wearing the backpack is clearer than the backpack alone.
+- **Visible quality:** express the quality through the object itself. For `It looks cute`, a friendly face or small heart drawn on the backpack may support `cute`; a detached star beside the backpack does not.
+- **Parts, contents, materials, places, and processes:** draw the named item, location, or action directly and connect the label to it.
+- **Reason or ease of use:** show the practical cause. For `easy to use`, show an open, accessible backpack or a simple opening/closing action; do not use a generic thumbs-up, trophy, or approval badge.
+
+When choosing between two correct illustrations, prefer the one that lets a beginner infer the English sentence with the least explanation.
+
 ## Approved visual benchmark
 
 Use [`../assets/coffee-review-card-example.png`](../assets/coffee-review-card-example.png) as the user-approved benchmark for future review cards. Match its hand-drawn watercolor-and-colored-pencil feel, portrait branching layout, short English labels, friendly educational tone, and moderate information density.
@@ -52,17 +64,19 @@ Before generation, build a content manifest containing:
 - the exact center word;
 - 6–9 exact branch headings;
 - every permitted English label, written verbatim;
-- the permitted objects, actions, and places for each branch.
+- the permitted objects, actions, people, places, and object-attached visual treatments for each branch;
+- the intended semantic relationship between each illustration and its English label.
 
 If a raster image-generation tool is available, classify this as a `scientific-educational` or `infographic-diagram` image. Include the approved benchmark as a style and layout reference when the tool supports reference images. Supply the complete content manifest in the prompt.
 
 Inspect the result against the manifest. Reject it and make one targeted correction pass when any of these conditions occurs:
 
 - required text is missing, misspelled, duplicated, or attached to the wrong object;
-- an unpracticed fact, unrelated object, mascot, character, animal, logo, brand, or Chinese text appears;
+- an unpracticed fact, unrelated object, detached decorative symbol, generic reaction icon, logo, brand, or Chinese text appears;
 - a required branch is missing or two branches are accidentally merged;
 - labels are too small, crowded, or low-contrast for phone review;
 - the central topic or a practiced part, action, or place is illustrated inaccurately.
+- a person, character, animal, face, or decorative mark appears without directly clarifying the labeled sentence.
 
 Do not accept a card merely because its overall style matches the benchmark. Content accuracy and direct visual relevance are required.
 

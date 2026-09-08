@@ -31,7 +31,7 @@ one-word-speaking-coach/
 
 This plugin contains no MCP server, external connector, tracking code, or account authentication.
 
-The latest packaged release in this repository is `one-word-speaking-coach-plugin-1.0.3.zip`.
+The latest packaged release in this repository is `one-word-speaking-coach-plugin-1.0.4.zip`.
 
 ## Platform scope
 
