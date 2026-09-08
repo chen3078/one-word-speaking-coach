@@ -10,7 +10,8 @@ One Word Speaking Coach is a skills-only ChatGPT and Codex plugin for adult Engl
 4. Learn useful missing vocabulary and real-world content.
 5. Retell the topic from a keyword route.
 6. Choose whether to transfer the same patterns to a related word.
-7. Review the lesson with an English-only visual decomposition card when image generation is available.
+7. Review every question with only its final correct, natural answer.
+8. Review the lesson with an English-only visual decomposition card when image generation is available.
 
 The coach defaults to English and uses brief Chinese only for genuinely new content or after repeated misunderstanding.
 

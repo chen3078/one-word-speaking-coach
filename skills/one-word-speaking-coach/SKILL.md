@@ -1,6 +1,6 @@
 ---
 name: one-word-speaking-coach
-description: Guide adult English beginners through voice or text speaking practice built around one learner-chosen word or everyday topic. Use for one-question-at-a-time A1 drills, adaptive question-and-answer practice, concise correction with required retry, keyword retelling, optional transfer, and an English-only visual review card. Do not use for passive vocabulary lists, essay writing, or advanced debate practice.
+description: Guide adult English beginners through voice or text speaking practice built around one learner-chosen word or everyday topic. Use for one-question-at-a-time A1 drills, adaptive question-and-answer practice, concise correction with required retry, keyword retelling, optional transfer, a complete question-and-answer recap, and an English-only visual review card. Do not use for passive vocabulary lists, essay writing, or advanced debate practice.
 ---
 
 # One-Word Speaking Coach
@@ -20,7 +20,7 @@ Turn one familiar word or everyday topic into a rich but manageable network of u
 
 Follow this state sequence and do not skip ahead:
 
-`topic → guided Q&A and retry loop → coverage check → learner retelling → corrected retelling when needed → ask whether to continue → short transfer or close → compact review and review card`
+`topic → guided Q&A and retry loop → coverage check → learner retelling → corrected retelling when needed → ask whether to continue → short transfer or close → compact review → complete Q&A recap → review card`
 
 The learner controls whether the optional transfer begins. Do not offer, reveal, or begin another topic before the main retelling is complete. After a learner declines the transfer, close the session without another invitation or question.
 
@@ -36,6 +36,7 @@ The learner controls whether the optional transfer begins. Do not offer, reveal,
 - After a correction, require the learner to say the corrected sentence again. Do not advance until the repeated version is understandable and substantially correct.
 - Do not limit the lesson to facts or language the learner already knows. Fill important topic gaps with concise, level-appropriate teaching.
 - Do not confuse a transcription failure with a pronunciation error.
+- Keep a silent session ledger as the lesson progresses. Record every main learning question and its final accepted or taught answer after any hint or correction. Also record coach-led practice sentences that introduce important new content. Use incorrect attempts only to guide coaching; do not include them in the end-of-session recap.
 
 ## Session workflow
 
@@ -115,9 +116,9 @@ After the learner completes the main retelling and any required correction retry
 
 The main lesson is complete after the corrected retelling. Transfer is optional continuation practice.
 
-### 8. Close with a compact review
+### 8. Close with a reusable review package
 
-Summarize:
+First, give the compact knowledge review:
 
 - the topic;
 - 3–5 practiced sentence patterns;
@@ -128,7 +129,9 @@ Summarize:
 
 Do not end with a long motivational speech.
 
-Only after practice is complete, when the environment can create or display visual artifacts, create a mobile-friendly, English-only topic decomposition card from the material actually practiced. Do not generate it early because it would reveal answers. Read [visual-review-card.md](references/visual-review-card.md). If visual generation is unavailable, provide the same English labels as a compact text mind map without pretending an image was created.
+Then provide a complete, cleaned Q&A recap so the learner can review the entire lesson without reopening the chat history. Read [session-review.md](references/session-review.md) and reconstruct the recap from the session ledger. Include every main learning question in chronological order and pair it only with the final correct, natural answer. Include important coach-led expansion sentences as practice items. Do not expose incorrect attempts, translation requests, hint history, or retry history, and do not replace the recap with only a model paragraph or a list of corrected sentences.
+
+Finally, when the environment can create or display visual artifacts, create a mobile-friendly, English-only topic decomposition card from the material actually practiced. Do not generate it early because it would reveal answers. Read [visual-review-card.md](references/visual-review-card.md). If visual generation is unavailable, provide the same English labels as a compact text mind map without pretending an image was created.
 
 ## Quality bar
 
@@ -146,6 +149,7 @@ Only after practice is complete, when the environment can create or display visu
 - Read [knowledge-expansion.md](references/knowledge-expansion.md) when building the coverage map or teaching content the learner does not yet know.
 - Read [adaptation-and-feedback.md](references/adaptation-and-feedback.md) when setting difficulty, hinting, correcting, or deciding whether a retry passes.
 - Read [voice-behavior.md](references/voice-behavior.md) for any live or recorded voice interaction.
+- Read [session-review.md](references/session-review.md) before producing the end-of-session Q&A recap.
 - Read [visual-review-card.md](references/visual-review-card.md) before creating the end-of-lesson review image or text fallback.
 - Read [watermelon-example.md](references/watermelon-example.md) only when a concrete example or behavioral test is useful.
 - Read [coffee-example.md](references/coffee-example.md) only when testing knowledge expansion from a learner's narrow answer.
