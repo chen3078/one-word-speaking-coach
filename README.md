@@ -31,6 +31,8 @@ one-word-speaking-coach/
 
 This plugin contains no MCP server, external connector, tracking code, or account authentication.
 
+The latest packaged release in this repository is `one-word-speaking-coach-plugin-1.0.2.zip`.
+
 ## Start a lesson
 
 After installing the plugin, start a new ChatGPT conversation, select the skill with `@one-word-speaking-coach`, and say:
