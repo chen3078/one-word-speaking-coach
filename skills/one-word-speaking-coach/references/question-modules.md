@@ -61,20 +61,25 @@ Avoid obscure anatomy and unsafe claims about interacting with wild animals.
 
 ## Everyday objects and clothing
 
-Useful dimensions: identity, appearance, material, parts, location, ownership, function, method, occasion, care.
+Useful dimensions: identity, appearance, common kinds, material, parts, location, ownership, function, method, occasion, care, purchase or access, and production, assembly, or how it works.
 
 Possible questions:
 
 - What is it?
 - What does it look like?
+- What are some common kinds?
 - What is it made of?
 - What parts does it have?
 - What do we use it for?
 - When do we use or wear it?
 - Where do we usually keep it?
+- Where can we buy or get it?
 - How do we use it?
+- How is it made, assembled, or how does it work?
 - Do you have one?
 - Which kind do you prefer?
+
+For a familiar purchased or manufactured physical object, `common kinds`, `where to buy or get it`, and a simple `made / assembled / works` explanation are default required dimensions when meaningful. A learner naming their own kind does not complete the kinds dimension: teach at least one other common kind and have the learner contrast or name both. Similarly, one personal shop or source does not complete the access dimension when another common route is useful. Omit one of these dimensions only when it is genuinely inapplicable or would require obscure, unsafe, or non-beginner detail; reaching 8–12 questions is not a reason to omit it.
 
 ## Transport
 

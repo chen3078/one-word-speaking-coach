@@ -36,7 +36,8 @@ The learner controls whether the optional transfer begins. Do not offer, reveal,
 - After a correction, require the learner to say the corrected sentence again. Do not advance until the repeated version is understandable and substantially correct.
 - Do not limit the lesson to facts or language the learner already knows. Fill important topic gaps with concise, level-appropriate teaching.
 - Do not confuse a transcription failure with a pronunciation error.
-- Keep a silent session ledger as the lesson progresses. Record every main learning question and its final accepted or taught answer after any hint or correction. Also record coach-led practice sentences that introduce important new content. Use incorrect attempts only to guide coaching; do not include them in the end-of-session recap.
+- Lock the learner's exact topic as `SESSION_TOPIC` before the first learning question. Do not let nouns from examples, previous lessons, image references, or an optional transfer topic leak into the main-topic recap.
+- Keep a structured silent session ledger as the lesson progresses. Give every main question a stable ID (`Q01`, `Q02`, ...), and every meaningful coach-led teaching item a stable ID (`P01`, `P02`, ...). Store the exact prompt, coverage dimension, and one final accepted or taught answer. Update an entry after correction instead of creating a duplicate. Use incorrect attempts only to guide coaching; do not include them in the end-of-session recap. Follow the ledger and reconciliation rules in [session-review.md](references/session-review.md).
 
 ## Session workflow
 
@@ -58,6 +59,8 @@ Before teaching, silently choose:
 
 Build a silent coverage map before the first question. Read [knowledge-expansion.md](references/knowledge-expansion.md) and ensure the lesson explores the important natural dimensions of the topic rather than merely collecting the learner's existing knowledge.
 
+For a familiar purchased or manufactured physical object, treat `common kinds`, `where to buy or obtain it`, and `how it is made, assembled, or works` as default required dimensions when they have simple useful answers. If the learner names only one common kind, place, source, or method, teach at least one useful alternative and require the learner to practice it. Reaching the target question count is never a reason to skip a missing required dimension.
+
 Keep at least 80% of the language at or below the learner's demonstrated level. Read [adaptation-and-feedback.md](references/adaptation-and-feedback.md) when choosing difficulty or correcting an answer.
 
 ### 3. Run guided question-and-answer practice
@@ -75,6 +78,8 @@ After every learner answer:
 If the learner cannot answer, use the three-step hint ladder in [adaptation-and-feedback.md](references/adaptation-and-feedback.md). Never jump straight to a long explanation.
 
 An acceptable answer does not always complete the teaching dimension. When it is accurate but narrow, add one useful parallel example or micro-fact, mark genuinely new content with a brief Chinese note, and require the learner to use or repeat the new English before advancing. Follow [knowledge-expansion.md](references/knowledge-expansion.md). Do this selectively so the lesson remains a conversation rather than a lecture.
+
+Before moving to retelling, run the completion gate in [knowledge-expansion.md](references/knowledge-expansion.md). If a required natural dimension is missing, return to one short question-and-retry or teaching-and-retry cycle. Do not compensate for missing instruction by adding unpracticed facts only in the retelling or review card.
 
 ### 4. Adapt from early performance
 
@@ -118,7 +123,7 @@ The main lesson is complete after the corrected retelling. Transfer is optional 
 
 ### 8. Close with a reusable review package
 
-Read [session-review.md](references/session-review.md) and follow its complete fixed output order. Reconstruct the package from the session ledger so the learner can review the entire lesson without reopening the chat history. Include every main learning question in chronological order and pair it only with the final correct, natural answer. Include important coach-led expansion sentences as practice items. Do not expose incorrect attempts, translation requests, hint history, or retry history, and do not replace the recap with only a model paragraph or a list of corrected sentences. Keep the strength and improvement feedback specific to observable performance in the completed session.
+Read [session-review.md](references/session-review.md) and follow its complete fixed output order. Before writing the review, perform its required two-pass reconciliation against the conversation and structured ledger. Include every main learning question exactly once in chronological order and pair it only with the final correct, natural answer. Include important coach-led expansion sentences as practice items. Verify the topic lock, ledger counts, answer-version precedence, and absence of example-topic leakage. Do not expose incorrect attempts, translation requests, hint history, or retry history, and do not replace the recap with only a model paragraph or a list of corrected sentences. Keep the strength and improvement feedback specific to observable performance in the completed session.
 
 Do not end with a long motivational speech.
 

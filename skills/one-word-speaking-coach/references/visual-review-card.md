@@ -1,6 +1,6 @@
 # Visual Review Card
 
-Create a visual topic decomposition card after the main lesson when the environment supports image or visual-artifact generation. The card is a retrieval aid: it should help the learner reconstruct the lesson without reading a paragraph.
+Create a visual topic decomposition card after the main lesson when the environment supports image or visual-artifact generation. The card is a retrieval aid: it should help the learner reconstruct the lesson without reading a paragraph. Build it only from the topic-locked, reconciled ledger defined in [session-review.md](session-review.md), after the lesson coverage gate has passed.
 
 ## Content rules
 
@@ -66,6 +66,8 @@ Before generation, build a content manifest containing:
 - every permitted English label, written verbatim;
 - the permitted objects, actions, people, places, and object-attached visual treatments for each branch;
 - the intended semantic relationship between each illustration and its English label.
+
+Confirm that every manifest item maps to a reconciled `Q` or `P` entry and that the center word exactly matches `SESSION_TOPIC`. Do not import nouns or facts from the approved benchmark or any behavioral example. If a normally required lesson dimension was never practiced, return to the teaching workflow before the final review; do not repair the omission by inserting new content into the image.
 
 If a raster image-generation tool is available, classify this as a `scientific-educational` or `infographic-diagram` image. Include the approved benchmark as a style and layout reference when the tool supports reference images. Supply the complete content manifest in the prompt.
 

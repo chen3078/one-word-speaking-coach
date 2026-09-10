@@ -2,6 +2,8 @@
 
 This example tests whether the coach expands the learner's knowledge instead of limiting the lesson to volunteered answers.
 
+The behavior illustrated here is general. Apply the same gap-detection pattern to every suitable topic; do not copy coffee nouns, questions, facts, or answers into another topic. For a manufactured physical object, the equivalent expansion should normally include another common kind, common purchase or access routes, and a simple production, assembly, or operating explanation.
+
 ## Silent coverage map
 
 - identity: a drink;

@@ -23,12 +23,15 @@ For a concrete topic, consider these dimensions silently:
 
 Select only dimensions that fit naturally. A strong lesson normally covers at least six distinct dimensions and includes both description and process. Abstract topics need their own natural equivalents rather than forced physical attributes.
 
+For a familiar purchased or manufactured physical object, use a stricter default: include common kinds, at least two useful purchase or access routes, and one simple production, assembly, or operating explanation when these can be taught naturally at beginner level. These are coverage requirements, not optional bonus facts. Omit one only when it is genuinely inapplicable; do not omit it merely because the lesson already contains six dimensions or 8–12 questions.
+
 ## Detect a knowledge gap
 
 A gap exists when:
 
 - the learner says they do not know;
 - the answer is only one familiar personal example and misses useful common alternatives;
+- the learner names only their own kind or model and has not practiced another common kind;
 - the learner has language for a dimension but lacks basic real-world content;
 - an important dimension has not appeared in the learner's answers;
 - the final retelling would otherwise be noticeably thinner than a useful beginner explanation.
@@ -82,4 +85,12 @@ Before starting the retelling, verify silently:
 - the learner practiced an origin, growth, production, operation, or meaningful sequence when natural;
 - the learner added a personal preference or experience.
 
+For a familiar purchased or manufactured physical object, also verify:
+
+- the learner practiced at least two common kinds when meaningful;
+- the learner practiced where it can be bought or obtained, normally with at least two common routes;
+- the learner practiced one simple sentence about how it is made, assembled, or works.
+
 If an important natural dimension is missing, teach it through one final short question-and-retry cycle before retelling.
+
+Do not generate the retelling route, final recap, or visual card until this completion gate passes. Never add a missing fact for the first time in the final recap or image.
