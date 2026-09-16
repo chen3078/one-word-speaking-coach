@@ -1,110 +1,118 @@
-# Visual Review Card
+# Visual Review Package
 
-Create a visual topic decomposition card after the main lesson when the environment supports image or visual-artifact generation. The card is a retrieval aid: it should help the learner reconstruct the lesson without reading a paragraph. Build it only from the topic-locked, reconciled ledger defined in [session-review.md](session-review.md), after the lesson coverage gate has passed.
+Create the visual package only after the written ledger has passed reconciliation. The learner must receive both the verified written review and illustrated visual study materials.
 
-## Content rules
+## Required deliverables
 
-- Use English only inside the visual. Do not include Chinese translations.
-- Include only facts, words, and processes actually practiced during the session.
-- Put the target word and a clear illustration at the center or left-center, with the learning branches arranged clearly around or beside it.
-- Use 6–9 surrounding branches selected from the lesson's natural coverage dimensions.
-- Keep labels short, usually 1–5 words.
-- Prefer concrete nouns, adjectives, short verb phrases, and arrow sequences.
-- Use exact spelling and natural English.
-- Do not include full model paragraphs, grammar explanations, scores, brand names that were not needed, or decorative filler.
-- Every illustration must make the practiced meaning easier to retrieve. It may show the target object alone, the object being used in a natural action or context, or a small visual treatment attached directly to the object when that treatment clearly expresses a practiced quality.
-- Do not ban people, animals, faces, or decorative marks categorically. Allow them only when they have a clear semantic relationship to the target sentence. Reject isolated decoration or abstract reaction symbols that could appear beside almost any topic.
+Generate:
 
-Typical branches:
+1. one or more illustrated `Topic Review` pages containing the full `Knowledge Summary` and complete Q&A sequence;
+2. exactly one illustrated topic-decomposition mind map.
 
-- `What it is`
-- `Looks`
-- `Parts / Ingredients`
-- `Taste / Feel`
-- `Kinds / States`
-- `When`
-- `Where`
-- `How to use / eat / drink`
-- `From / Grows / Made`
+Every output image must be portrait 9:16. The first `Topic Review` page may place `Knowledge Summary` in the upper section and the opening Q&A items below it. Continue the remaining Q&A on additional pages. There is no fixed page count: split whenever phone-sized text, semantic illustrations, or generous spacing would otherwise be compromised. Never omit, paraphrase, compress, or shrink verified content merely to reduce the number of pages.
 
-Rename or omit branches to fit the topic naturally.
+## Required reference assets
 
-## Visual design
+Use these user-approved examples as actual style-and-layout references for `Topic Review` pages:
 
-- Use a clean educational mind-map or labeled-object style.
-- Make it portrait or square and easy to read on a phone.
-- Prefer a hand-drawn watercolor-and-colored-pencil look with soft paper texture, matching the approved benchmark.
-- For a portrait card, use curved hand-drawn branches leading to stacked, numbered learning sections when that fits the topic.
-- Use high contrast, generous spacing, and one clear visual hierarchy.
-- Connect each label visibly to the central subject or relevant illustrated part.
-- Use a limited friendly color palette and simple illustrations.
-- Avoid tiny text, crowded backgrounds, watermarks, logos, unnecessary decoration, and Chinese characters.
+- `../assets/reference-review-cup-page-1.png`
+- `../assets/reference-review-cup-page-2.png`
 
-## Semantic illustration choices
+Use this user-approved example as the primary mind-map reference:
 
-Choose the most direct visual explanation for each kind of sentence:
+- `../assets/reference-review-cup-mind-map.png`
 
-- **Identity or function:** show the object performing its real function in a simple context. For `A backpack is a bag that we carry on our back`, a generic person wearing the backpack is clearer than the backpack alone.
-- **Visible quality:** express the quality through the object itself. For `It looks cute`, a friendly face or small heart drawn on the backpack may support `cute`; a detached star beside the backpack does not.
-- **Parts, contents, materials, places, and processes:** draw the named item, location, or action directly and connect the label to it.
-- **Reason or ease of use:** show the practical cause. For `easy to use`, show an open, accessible backpack or a simple opening/closing action; do not use a generic thumbs-up, trophy, or approval badge.
+The earlier bundled cards may be used as secondary mind-map references when useful:
 
-When choosing between two correct illustrations, prefer the one that lets a beginner infer the English sentence with the least explanation.
+- `../assets/reference-umbrella.png`
+- `../assets/reference-computer.png`
+- `../assets/reference-cup.jpg`
+- `../assets/reference-backpack.png`
 
-## Approved visual benchmark
+All input images are style and layout references only. Never copy their cup, umbrella, computer, backpack, Hello Kitty, labels, facts, colors, objects, or answers into a different lesson unless those items were genuinely practiced in the current session.
 
-Use [`../assets/coffee-review-card-example.png`](../assets/coffee-review-card-example.png) as the user-approved benchmark for future review cards. Match its hand-drawn watercolor-and-colored-pencil feel, portrait branching layout, short English labels, friendly educational tone, and moderate information density.
+## Shared art direction
 
-Treat the benchmark as a style and composition reference only. Do not copy its coffee content into another topic. Build every branch, illustration, and label from the current lesson's practiced material.
+- Portrait 9:16 mobile study page with safe margins and generous breathing room.
+- Warm off-white watercolor-paper background with subtle visible grain.
+- Hand-drawn dark ink lettering and outlines with colored-pencil and light watercolor fills.
+- Friendly adult-beginner workbook tone: lively and memorable, not childish or corporate.
+- Large hand-lettered topic title, soft pink and blue marker highlights, numbered sections, and clear visual hierarchy.
+- Small semantic illustrations beside the exact language they explain; illustrations are part of the teaching, not decoration.
+- Topic-derived limited palette, high contrast, and comfortable phone-readable type.
+- No photorealism, glossy 3D, plain spreadsheet-like cards, generic corporate UI, dense grids, long unbroken paragraphs, tiny type, unrelated decoration, watermarks, or signatures.
 
-## Generation strategy
+## Topic Review pages
 
-Before generation, build a content manifest containing:
+### First page
 
-- the exact center word;
-- 6–9 exact branch headings;
-- every permitted English label, written verbatim;
-- the permitted objects, actions, people, places, and object-attached visual treatments for each branch;
-- the intended semantic relationship between each illustration and its English label.
+Prefer this structure when it fits comfortably:
 
-Confirm that every manifest item maps to a reconciled `Q` or `P` entry and that the center word exactly matches `SESSION_TOPIC`. Do not import nouns or facts from the approved benchmark or any behavioral example. If a normally required lesson dimension was never practiced, return to the teaching workflow before the final review; do not repair the omission by inserting new content into the image.
+1. large title such as `<TOPIC> REVIEW · 1`;
+2. `Knowledge Summary` in the upper section;
+3. opening part of `Complete Q&A Review` in the lower section.
 
-If a raster image-generation tool is available, classify this as a `scientific-educational` or `infographic-diagram` image. Include the approved benchmark as a style and layout reference when the tool supports reference images. Supply the complete content manifest in the prompt.
+The `Knowledge Summary` must contain:
 
-Inspect the result against the manifest. Reject it and make one targeted correction pass when any of these conditions occurs:
+- exact topic;
+- 12-20 useful practiced words or chunks;
+- a concise Chinese meaning in parentheses beside every practiced teacher-introduced unfamiliar word, for example `ceramic（陶瓷的）` or `rinse（冲洗）`;
+- 4-6 reusable practiced sentence patterns;
+- `You did well`, `Next focus`, and retelling keywords when space permits without crowding.
 
-- required text is missing, misspelled, duplicated, or attached to the wrong object;
-- an unpracticed fact, unrelated object, detached decorative symbol, generic reaction icon, logo, brand, or Chinese text appears;
-- a required branch is missing or two branches are accidentally merged;
-- labels are too small, crowded, or low-contrast for phone review;
-- the central topic or a practiced part, action, or place is illustrated inaccurately.
-- a person, character, animal, face, or decorative mark appears without directly clarifying the labeled sentence.
+Use a few clear, topic-specific illustrations to anchor meaning. Do not turn the page into a plain typographic list.
 
-Do not accept a card merely because its overall style matches the benchmark. Content accuracy and direct visual relevance are required.
+### Q&A continuation
 
-If the targeted correction still cannot produce reliable exact text, use a code-native SVG, HTML, canvas, slides, or diagram layout that preserves every label exactly. If no visual tool is available, output a compact English-only text mind map and state that it is the fallback, not an image.
+Reproduce every reconciled `Question` with its one final `Correct answer`, in chronological order. Keep each pair together. Use alternating pink and blue hand-drawn accents, continuous numbering across pages, short separators, and a relevant mini-illustration for the question whenever it clarifies meaning.
 
-## Example content specification: coffee
+Allow the final answer to contain teacher-taught knowledge only when the learner successfully practiced that answer under the same question. Do not show an incorrect attempt, hint trail, skipped question, or unpracticed fact.
 
-Center:
+The number of Q&A items per page is determined only by readability. Add another 9:16 page instead of shrinking the text, removing illustrations, or compressing vertical spacing.
 
-`COFFEE`
+## Topic-decomposition mind map
 
-Possible practiced branches:
+Generate exactly one 9:16 hand-drawn mind map after the review pages.
 
-- `dark drink`
-- `coffee beans`
-- `bitter`
-- `hot or iced`
-- `morning or afternoon`
-- `home / café / store`
-- `milk or sugar`
-- `roast → grind → brew`
+Build its manifest from the reconciled ledger:
 
-Use only the branches actually taught. Do not add this entire example automatically.
+- exact `SESSION_TOPIC` as the large title;
+- 8-11 numbered branches chosen from practiced dimensions;
+- concise English labels written verbatim;
+- an object, action, person, place, part, material, or process illustration that directly explains each label;
+- all protected values copied from `FACT_LOCKS`.
 
-## Review instruction
+For a familiar object, prefer branches such as `What it is`, `Looks`, `Material & Parts`, `Kinds`, `Use`, `Keep & Clean`, `Buy`, `Made`, and `Why I like it` when those dimensions were practiced. Do not create an unpracticed branch merely to match the reference.
 
-After displaying the card, say only one short instruction such as:
+Place one large topic illustration on the left or lower-left, with thin curved muted-red branches leading to well-spaced numbered sections. Use process arrows for meaningful sequences such as cleaning, operating, buying routes, or making. Keep the mind map visually rich but readable; use short labels rather than full Q&A sentences.
 
-`Next time, look at this picture and talk about the topic without reading a script.`
+## Prompt contract
+
+Give every generated page its own exact text-and-illustration manifest. Include these invariants:
+
+```text
+Format: portrait 9:16 with generous whitespace and phone-readable text.
+References: style and layout only; never reuse their topic content.
+Text: render only the supplied title, headings, glossary pairs, questions, answers, and labels verbatim.
+Illustrations: every image must directly explain adjacent practiced content; no decorative filler.
+Facts: preserve all numbers, ranges, colors, names, places, preferences, ownership, and negatives.
+Pagination: create additional pages instead of crowding, shrinking, paraphrasing, or omitting content.
+```
+
+## Inspection and repair
+
+Inspect every image before presenting it:
+
+- correct 9:16 orientation, title, page number, and section order;
+- complete bilingual glossary with correct Chinese meanings;
+- every required item present once and correctly spelled;
+- Q&A order and pairing preserved with no pair split across pages;
+- meaningful illustrations aligned with their adjacent language;
+- protected facts unchanged;
+- comfortable margins, readable type, clear grouping, and no crowding;
+- no topic leakage from examples, references, or earlier lessons;
+- exactly one mind map, regardless of the number of review pages.
+
+If text or layout fails, make one targeted revision naming the defect and repeating the invariants. A second targeted revision is allowed. If a page remains crowded, split it. Do not replace the illustrated workbook style with a plain corporate text card merely to make rendering easier. Never claim that an image passed when its wording, facts, glossary, or semantic illustrations do not match the verified written review.
+
+After displaying the complete package, give only one short instruction such as: `Next time, look at the pictures and talk about the topic without reading a script.`

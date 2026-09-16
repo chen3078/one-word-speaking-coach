@@ -6,14 +6,14 @@ One Word Speaking Coach is a skills-only ChatGPT and Codex plugin for adult Engl
 
 1. Choose one word or topic.
 2. Answer one A1-level question at a time.
-3. Repeat concise corrections before moving on.
-4. Learn useful missing vocabulary and real-world content.
+3. Repeat a natural spoken correction before moving on.
+4. Learn useful missing vocabulary with proactive Chinese glosses and real-world content.
 5. Retell the topic from a keyword route.
 6. Choose whether to transfer the same patterns to a related word.
 7. Review every question with only its final correct, natural answer.
-8. Review the lesson with an English-only visual decomposition card when image generation is available.
+8. Review the lesson with 9:16 illustrated review pages and one hand-drawn topic mind map when image generation is available.
 
-The coach defaults to English and uses brief Chinese only for genuinely new content or after repeated misunderstanding.
+The coach defaults to English and proactively gives a brief Chinese gloss before likely unfamiliar teacher-introduced words.
 
 ## Plugin structure
 
@@ -31,7 +31,7 @@ one-word-speaking-coach/
 
 This plugin contains no MCP server, external connector, tracking code, or account authentication.
 
-The latest packaged release in this repository is `one-word-speaking-coach-plugin-1.0.4.zip`.
+The latest packaged release in this repository is `one-word-speaking-coach-plugin-1.0.5.zip`.
 
 ## Platform scope
 
@@ -53,4 +53,4 @@ Official platform references: [ChatGPT plugins](https://learn.chatgpt.com/zh-Han
 
 ## Reference implementation
 
-The included coffee review card is the approved visual benchmark for future end-of-lesson cards. It is a style and layout reference; each lesson must generate labels from content the learner actually practiced.
+The included cup review pages and cup mind map are the approved visual benchmarks for future end-of-lesson materials. They are style and layout references only; every lesson must generate text and pictures from facts the learner actually practiced.

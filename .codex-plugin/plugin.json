@@ -1,7 +1,7 @@
 {
   "name": "one-word-speaking-coach",
-  "version": "1.0.4",
-  "description": "A beginner English speaking coach that turns one word into guided questions, correction, retelling, a complete Q&A recap, transfer, and visual review.",
+  "version": "1.0.5",
+  "description": "A professional A1 speaking coach with strict one-question practice, natural spoken recasts, proactive Chinese glosses, structured review, and illustrated learning pages.",
   "author": {
     "name": "One Word Speaking Coach"
   },
@@ -9,10 +9,10 @@
   "interface": {
     "displayName": "One Word Speaking Coach",
     "shortDescription": "Build beginner speaking skills from one familiar word.",
-    "longDescription": "Guides adult A1 learners through one-question-at-a-time speaking practice, concise correction and retry, knowledge expansion, keyword retelling, optional transfer, a complete Q&A recap, and an English-only visual review card.",
+    "longDescription": "Guides adult A1 learners through strict one-question-at-a-time speaking practice, natural spoken-answer correction and retry, proactive Chinese glosses, professional knowledge expansion, complete Q&A review, portrait illustrated review pages, and a hand-drawn topic mind map.",
     "developerName": "One Word Speaking Coach",
     "category": "Productivity",
     "capabilities": [],
-    "defaultPrompt": "Start an A1 speaking lesson from a word I choose. Ask one question at a time."
+    "defaultPrompt": "My topic is ____. Start an A1 lesson and follow the skill strictly, one question at a time."
   }
 }
